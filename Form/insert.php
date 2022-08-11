@@ -23,7 +23,7 @@
     echo "&nbsp;&nbsp;", $Lastname;
     echo "<br/>";
     echo "เพศ : ", $sex;
-    echo "<br/>";
+    echo "<br/>"; 
     echo "วันที่เกิด : ", $birthdate;
     echo "<br/>";
     echo "ที่อยู่ : ", $address;

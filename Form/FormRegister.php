@@ -21,11 +21,11 @@
             <i class="bi bi-star-fill"></i> Register <i class="bi bi-star-fill"></i>
             </div>
             <div class="card-body">
-                <form name="form1" action="#" method="post">
+                <form name="form1" action="insert.php" method="post"> <!--form -->
                     <div class="row"> <!-- row1 -->
                         <div class="col-md-2">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-bookmark-star"></i> คำนำหน้าชื่อ</label>
-                            <select name="firstname" id="firstname" class="form-control">
+                            <select name="txt_firstname" id="txt_firstname" class="form-control">
                                 <option value="">คำนำหน้า</option>
                                 <option value="นาย">นาย</option>
                                 <option value="นาง">นาง</option>
@@ -34,11 +34,11 @@
                         </div>
                         <div class="col-md-5">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-bookmark-star"></i> ชื่อ</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="กรุณากรอกข้อมูล">
+                            <input type="text" class="form-control" name="txt_name" id="txt_name" placeholder="กรุณากรอกข้อมูล">
                         </div>
                         <div class="col-md-5">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-bookmark-star"></i> นามสกุล</label>
-                            <input type="text" class="form-control" name="Lastname" id="Lastname" placeholder="กรุณากรอกข้อมูล">
+                            <input type="text" class="form-control" name="txt_Lastname" id="txt_Lastname" placeholder="กรุณากรอกข้อมูล">
                         </div>
                     </div> <!-- row1 -->
                     &nbsp;
@@ -47,8 +47,8 @@
                         <div class="col-md-2">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-gender-ambiguous"></i> เพศ </label>
                             <div>
-                            <input type="radio" class="form-check-input" name="sex" id="sex"> ชาย
-                            <input type="radio" class="form-check-input" name="sex" id="sex"> หญิง
+                            <input type="radio" class="form-check-input" name="txt_sex" id="txt_sex" value="ชาย"> ชาย
+                            <input type="radio" class="form-check-input" name="txt_sex" id="txt_sex" value="หญิง"> หญิง
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -65,18 +65,18 @@
                     <div class="row"> <!-- row3 -->
                         <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-telephone-fill"></i> เบอร์โทร</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="กรุณากรอกข้อมูล">
+                            <input type="text" class="form-control" name="txt_number" id="txt_number" placeholder="กรุณากรอกข้อมูล">
                         </div>
                         <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-envelope-fill"></i> อีเมลล์</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="กรุณากรอกข้อมูล">
+                            <input type="text" class="form-control" name="txt_email" id="txt_email" placeholder="กรุณากรอกข้อมูล">
                         </div>
                     </div> <!-- row3 -->
                     &nbsp;
                     &nbsp;
                     <center>
                         <button class="btn btn-success btn-sm" type="submit"><i class="bi bi-check-circle-fill"></i>  บันทึก   </button>
-                        <button class="btn btn-warning btn-sm" type="submit"><i class="bi bi-x-circle-fill"></i>  ยกเลิก</button>
+                        <button class="btn btn-warning btn-sm" type="reset"><i class="bi bi-x-circle-fill"></i>  ยกเลิก</button>
                     </center>
                 </form>
             </div>

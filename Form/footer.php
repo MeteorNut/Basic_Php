@@ -12,13 +12,12 @@
     </div>
 
     <div class="col mb-3">
-      <h5>Section</h5>
+      <h5>Center Game</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Center Game</a></li>
+        <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="FormRegister.php" class="nav-link p-0 text-muted">Register</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Login</a></li>
       </ul>
     </div>
 

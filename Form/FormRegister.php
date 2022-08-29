@@ -65,11 +65,11 @@
                     <div class="row"> <!-- row3 -->
                         <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-telephone-fill"></i> เบอร์โทร</label>
-                            <input type="text" class="form-control" name="txt_number" id="txt_number" placeholder="กรุณากรอกข้อมูล">
+                            <input type="number" class="form-control" name="txt_number" id="txt_number" placeholder="กรุณากรอกข้อมูล">
                         </div>
                         <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-envelope-fill"></i> อีเมลล์</label>
-                            <input type="text" class="form-control" name="txt_email" id="txt_email" placeholder="กรุณากรอกข้อมูล">
+                            <input type="email" class="form-control" name="txt_email" id="txt_email" placeholder="กรุณากรอกข้อมูล">
                         </div>
                     </div> <!-- row3 -->
                     &nbsp;

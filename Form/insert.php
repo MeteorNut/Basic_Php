@@ -2,38 +2,51 @@
     <?php
     include("header.php");
     ?>
+
 <?php
     echo "<br/>";
     echo "<br/>";
     echo "<br/>";
 ?>
-<center>
-<?php
+<center><?php
+include("config.inc.php"); //-- ไฟล์ใช้ในการเพิ่มข้อมูลเข้าฐานข้อมูล  
+
     $firstname = $_POST['txt_firstname'];
     $name = $_POST['txt_name'];
-    $Lastname = $_POST['txt_Lastname'];
+    $lastname = $_POST['txt_Lastname'];
     $sex = $_POST['txt_sex'];
-    $birthdate = $_POST['txt_birthdate'];
+    $date = $_POST['txt_birthdate'];
     $address = $_POST['txt_address'];
-    $number = $_POST['txt_number'];
+    $tell = $_POST['txt_number'];
     $email = $_POST['txt_email'];
-
+    $sql = "INSERT INTO tbl_member (id, firstname, name, lastname, sex, birthday, address, tel, email) VALUES ('', '$firstname','$name','$lastname','$sex','$date','$address','$tell','$email')";
+    
+    if (mysqli_query($conn, $sql)) 
+    {
+        echo "เพิ่มข้อมูลสำเร็จ";
+    }else
+    {
+        echo "เพิ่มข้อมูลไม่สำเร็จ";
+    }
+    $conn -> close();
+    /*
     echo $firstname;
-    echo $name;
-    echo "&nbsp;&nbsp;", $Lastname;
+    echo $name;"       ";
+    echo "&nbsp;&nbsp;&nbsp;",$lastname;
     echo "<br/>";
-    echo "เพศ : ", $sex;
-    echo "<br/>"; 
-    echo "วันที่เกิด : ", $birthdate;
+    echo "เพศ =:",$sex;
     echo "<br/>";
-    echo "ที่อยู่ : ", $address;
+    echo "วันเกิด =",$date;
     echo "<br/>";
-    echo "เบอร์โทร : ", $number;
+    echo "เบอร์ =:",$tell;
     echo "<br/>";
-    echo "Email : ", $email;
-?>
-</center>
+    echo "ที่อยู่ =",$address;
+    echo "<br/>";
+    echo "อีเมล์ =:",$email;
+    echo "<br/>";
+    */
+?></center>
 
 <?php
     include("footer.php");
-    ?>
+?>

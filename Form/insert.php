@@ -1,4 +1,4 @@
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <?php
     include("header.php");
     ?>
@@ -23,10 +23,33 @@ include("config.inc.php"); //-- ไฟล์ใช้ในการเพิ่
     
     if (mysqli_query($conn, $sql)) 
     {
-        echo "เพิ่มข้อมูลสำเร็จ";
+        echo "    
+        <script>
+        Swal.fire({
+            icon: 'success',
+            title: '<h3>ระบบทำการบันทึกข้อมูลสำเร็จ</h3>',
+            type: 'success',
+            showConfirmButton: false,
+            timer: 2000
+        }).then(function() {
+            window.location = 'FormRegister.php';
+        });
+        </script>
+        ";
     }else
     {
-        echo "เพิ่มข้อมูลไม่สำเร็จ";
+        echo "        
+        <script>
+        Swal.fire({
+            icon: 'error',
+            title: '<h3>ระบบทำการบันทึกข้อมูลไม่สำเร็จ</h3>',
+            type: 'error',
+            showConfirmButton: false,
+            timer: 2000
+        }).then(function() {
+            window.location = 'FormRegister.php';
+        });
+        </script>";
     }
     $conn -> close();
     /*

@@ -34,6 +34,9 @@
         <li class="nav-item">
           <a class="nav-link active text-light" href="FormRegister.php">Register   <i class="bi bi-person-square"></i></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" href="memberlist.php">member list   <i class="bi bi-card-checklist"></i></a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <button class="btn btn-light btn-sm" type="submit">Login   <i class="bi bi-box-arrow-in-right"></i></button>
